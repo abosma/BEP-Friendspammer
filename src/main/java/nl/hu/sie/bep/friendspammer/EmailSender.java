@@ -1,5 +1,6 @@
 package nl.hu.sie.bep.friendspammer;
 
+import nl.hu.sie.bep.exceptions.MailException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,11 @@ public class EmailSender {
 
 	static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
 
+	private EmailSender()
+	{
+
+	}
+
 	public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
 
 		Properties props = new Properties();
@@ -29,6 +35,7 @@ public class EmailSender {
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
+					@Override
 					protected PasswordAuthentication getPasswordAuthentication() {
 						return new PasswordAuthentication(username, password);
 					}
@@ -51,7 +58,7 @@ public class EmailSender {
 			MongoSaver.saveEmail(to, "spammer@spamer.com", subject, messageBody, asHtml);
 
 		} catch (MessagingException e) {
-			throw new RuntimeException(e);
+			throw new MailException(e);
 		}
 	}
 
@@ -67,6 +74,7 @@ public class EmailSender {
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
+					@Override
 					protected PasswordAuthentication getPasswordAuthentication() {
 						return new PasswordAuthentication(username, password);
 					}
@@ -87,12 +95,12 @@ public class EmailSender {
 					message.setText(messageBody);	
 				}
 				Transport.send(message);
-	
-				logger.info("Sent mail to " + InternetAddress.parse(toList[index]));
+
+				logger.info("Sent email to {0}", InternetAddress.parse(toList[index]).toString());
 			}
 
 		} catch (MessagingException e) {
-			throw new RuntimeException(e);
+			throw new MailException(e);
 		}
 	}
 	

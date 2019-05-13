@@ -1,27 +1,23 @@
 package nl.hu.sie.bep.friendspammer;
 
-import java.net.UnknownHostException;
-import java.util.Arrays;
-
-import org.bson.Document;
-
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoCredential;
 import com.mongodb.MongoException;
-import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class MongoSaver {
 
 	static final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+
+	private MongoSaver()
+	{
+
+	}
 
 	public static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
 		String userName = "AtillaBosma";
@@ -32,8 +28,6 @@ public class MongoSaver {
 		MongoClientURI uri = new MongoClientURI(
 				"mongodb+srv://" + userName + ":" + password + "@cluster0-z2xmc.azure.mongodb.net/test?retryWrites=true");
 
-		MongoCredential credential = MongoCredential.createCredential(userName, database, password.toCharArray());
-		
 		boolean success = true;
 		
 		try (MongoClient mongoClient = new MongoClient(uri)) {
