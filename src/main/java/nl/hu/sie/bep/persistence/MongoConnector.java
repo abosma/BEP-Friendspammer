@@ -5,6 +5,11 @@ import com.mongodb.MongoClientURI;
 
 public class MongoConnector {
 
+    private MongoConnector()
+    {
+
+    }
+
     public static MongoClient getConnectionClient()
     {
         String userName = "AtillaBosma";
@@ -12,18 +17,11 @@ public class MongoConnector {
         String database = "cluster0-z2xmc";
 
         MongoClientURI uri = new MongoClientURI(
-                String.format("mongodb+srv://{0}:{1}@{2}.azure.mongodb.net/test?retryWrites=true", userName, password, database));
+                String.format("mongodb+srv://%s:%s@%s.azure.mongodb.net/test?retryWrites=true", userName, password, database));
 
         MongoClient mongoClient = new MongoClient(uri);
 
-        if(mongoClient != null)
-        {
-            return mongoClient;
-        }
-        else
-        {
-            return null;
-        }
+        return mongoClient;
     }
 
 }
