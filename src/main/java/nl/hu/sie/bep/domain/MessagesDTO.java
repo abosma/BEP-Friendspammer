@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MessagesDTO {
 
-    private List<Document> documents;
+    private List<Document> documents = new ArrayList<>();
 
     public List<Document> getDocuments()
     {
