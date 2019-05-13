@@ -107,9 +107,7 @@ public class EmailSender {
 				{
 					logger.error("No email address found");
 				}
-
 			}
-
 		} catch (MessagingException e) {
 			throw new MailException(e);
 		}
