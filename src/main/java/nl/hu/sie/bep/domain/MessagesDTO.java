@@ -3,10 +3,16 @@ package nl.hu.sie.bep.domain;
 import org.bson.Document;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MessagesDTO {
 
-    public ArrayList<Document> documents = new ArrayList<>();
+    private List<Document> documents;
+
+    public List<Document> getDocuments()
+    {
+        return documents;
+    }
 
     public void addDocument(Document document)
     {

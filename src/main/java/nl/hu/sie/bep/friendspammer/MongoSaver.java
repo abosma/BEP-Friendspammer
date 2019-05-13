@@ -4,6 +4,7 @@ import com.mongodb.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import nl.hu.sie.bep.domain.MessagesDTO;
+import nl.hu.sie.bep.persistence.MongoConnector;
 import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,17 +21,11 @@ public class MongoSaver {
 	}
 
 	public static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
-		String userName = "AtillaBosma";
-		String password = "Welkom123";
-		String database = "cluster0";
-
-
-		MongoClientURI uri = new MongoClientURI(
-				"mongodb+srv://" + userName + ":" + password + "@cluster0-z2xmc.azure.mongodb.net/test?retryWrites=true");
+		String database = "cluster0-z2xmc";
 
 		boolean success = true;
-		
-		try (MongoClient mongoClient = new MongoClient(uri)) {
+
+		try (MongoClient mongoClient = MongoConnector.getConnectionClient()) {
 			
 			MongoDatabase db = mongoClient.getDatabase( database );
 			
@@ -43,8 +38,7 @@ public class MongoSaver {
 			        .append("asHtml", html);
 			c.insertOne(doc);
 		} catch (MongoException mongoException) {
-			logger.error("Error while saving to Mongo");
-			mongoException.printStackTrace();
+			logger.error("Error while saving to Mongo, error: \n{0}", mongoException);
 			success = false;
 		}
 		
@@ -76,7 +70,7 @@ public class MongoSaver {
 			messages.addDocument(email);
 		}
 
-		if(!messages.documents.isEmpty())
+		if(!messages.getDocuments().isEmpty())
 		{
 			mongoClient.close();
 

@@ -12,6 +12,6 @@ public class MongoSaverTest {
         MessagesDTO messages = MongoSaver.getAllMessages();
 
         assertNotNull(messages);
-        assertEquals(messages.documents.isEmpty(), false);
+        assertEquals(false, messages.getDocuments().isEmpty());
     }
 }
