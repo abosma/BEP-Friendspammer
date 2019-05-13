@@ -4,6 +4,7 @@ import nl.hu.sie.bep.exceptions.MailException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -96,7 +97,17 @@ public class EmailSender {
 				}
 				Transport.send(message);
 
-				logger.info("Sent email to {0}", InternetAddress.parse(toList[index]).toString());
+				String sentToEmail = Arrays.toString(InternetAddress.parse(toList[index]));
+
+				if(sentToEmail != null)
+				{
+					logger.info("Sent email to {0}", sentToEmail);
+				}
+				else
+				{
+					logger.error("No email address found");
+				}
+
 			}
 
 		} catch (MessagingException e) {

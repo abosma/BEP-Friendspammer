@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35240709-90a1-4790-babe-707f7338446b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/exceptions/MailException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Unit testen &amp; Test Driven Development/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit testen &amp; Test Driven Development/Code/.idea/workspace.xml" afterDir="false" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="303">
+              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#758#934#0" expanded="true" />
@@ -59,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="-258">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,8 +81,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/exceptions/MailException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" />
       </list>
     </option>
@@ -209,12 +206,12 @@
       <updated>1557144027451</updated>
       <workItem from="1557144029936" duration="2992000" />
       <workItem from="1557768812503" duration="475000" />
-      <workItem from="1557769358715" duration="1748000" />
+      <workItem from="1557769358715" duration="2103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5215000" />
+    <option name="totallyTimeSpent" value="5570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="62" width="1456" height="876" extended-state="6" />
@@ -279,6 +276,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/exceptions/MailException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -296,20 +303,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="303">
+          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#758#934#0" expanded="true" />
