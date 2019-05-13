@@ -16,9 +16,13 @@ import com.mongodb.MongoException;
 import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MongoSaver {
-	
+
+	static final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+
 	public static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
 		String userName = "AtillaBosma";
 		String password = "Welkom123";
@@ -45,7 +49,7 @@ public class MongoSaver {
 			        .append("asHtml", html);
 			c.insertOne(doc);
 		} catch (MongoException mongoException) {
-			System.out.println("XXXXXXXXXXXXXXXXXX ERROR WHILE SAVING TO MONGO XXXXXXXXXXXXXXXXXXXXXXXXXX");
+			logger.error("Error while saving to Mongo");
 			mongoException.printStackTrace();
 			success = false;
 		}
