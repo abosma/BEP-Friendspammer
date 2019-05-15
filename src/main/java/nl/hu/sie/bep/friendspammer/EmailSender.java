@@ -1,6 +1,7 @@
 package nl.hu.sie.bep.friendspammer;
 
 import nl.hu.sie.bep.exceptions.MailException;
+import nl.hu.sie.bep.persistence.EmailConnector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,21 +31,8 @@ public class EmailSender {
 
 	public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
 
-		Properties props = new Properties();
-		props.put("mail.smtp.host", "smtp.mailtrap.io");
-		props.put("mail.smtp.port", "2525");
-		props.put("mail.smtp.auth", "true");
+		Session session = EmailConnector.getSession();
 
-		final String username = dotenv.get("EMAIL_USERNAME");
-		final String password = dotenv.get("EMAIL_PASSWORD");
-
-		Session session = Session.getInstance(props,
-				  new javax.mail.Authenticator() {
-					@Override
-					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
-					}
-				  });
 		try {
 
 			Message message = new MimeMessage(session);
@@ -69,23 +57,9 @@ public class EmailSender {
 
 	public static void sendEmail(String subject, String[] toList, String messageBody, boolean asHtml) {
 
-		Properties props = new Properties();
-		props.put("mail.smtp.host", "smtp.mailtrap.io");
-		props.put("mail.smtp.port", "2525");
-		props.put("mail.smtp.auth", "true");
+		Session session = EmailConnector.getSession();
 
-		final String username = dotenv.get("EMAIL_USERNAME");
-		final String password = dotenv.get("EMAIL_PASSWORD");
-
-		Session session = Session.getInstance(props,
-				  new javax.mail.Authenticator() {
-					@Override
-					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
-					}
-				  });
 		try {
-
 			for (int index = 0; index < toList.length; index++) {
 			
 				Message message = new MimeMessage(session);

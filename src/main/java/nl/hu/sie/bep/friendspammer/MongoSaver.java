@@ -3,6 +3,7 @@ package nl.hu.sie.bep.friendspammer;
 import com.mongodb.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import io.github.cdimascio.dotenv.Dotenv;
 import nl.hu.sie.bep.domain.MessagesDTO;
 import nl.hu.sie.bep.persistence.MongoConnector;
 import org.bson.Document;
@@ -13,7 +14,9 @@ import java.util.Iterator;
 
 public class MongoSaver {
 
-	static final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+	private static final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+
+	private static Dotenv dotenv = Dotenv.load();
 
 	private MongoSaver()
 	{
@@ -21,13 +24,13 @@ public class MongoSaver {
 	}
 
 	public static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
-		String database = "cluster0-z2xmc";
+		String mongo_d = dotenv.get("MONGO_DATABASE");
 
 		boolean success = true;
 
 		try (MongoClient mongoClient = MongoConnector.getConnectionClient()) {
 			
-			MongoDatabase db = mongoClient.getDatabase( database );
+			MongoDatabase db = mongoClient.getDatabase(mongo_d);
 			
 			MongoCollection<Document> c = db.getCollection("email");
 			
@@ -48,15 +51,15 @@ public class MongoSaver {
 
 	public static MessagesDTO getAllMessages()
 	{
-		String userName = "spammer";
-		String password = "hamspam";
-		String database = "friendspammer";
+		String mongo_u = dotenv.get("MONGO_USERNAME_2");
+		String mongo_p = dotenv.get("MONGO_PASSWORD_2");
+		String mongo_d = dotenv.get("MONGO_DATABASE_2");
 
-		MongoCredential credential = MongoCredential.createCredential(userName, database, password.toCharArray());
+		MongoCredential credential = MongoCredential.createCredential(mongo_u, mongo_d, mongo_p.toCharArray());
 
 		MongoClient mongoClient = new MongoClient(new ServerAddress("ds227939.mlab.com", 27939), credential, MongoClientOptions.builder().build());
 
-		MongoDatabase db = mongoClient.getDatabase(database );
+		MongoDatabase db = mongoClient.getDatabase(mongo_d);
 
 		MongoCollection<Document> c = db.getCollection("email");
 
