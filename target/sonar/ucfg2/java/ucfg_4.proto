@@ -1,0 +1,222 @@
+
+énl.hu.sie.bep.friendspammer.MongoSaver#saveEmail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Z°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java ( "14*≈
+13°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java#1 #(4ﬂ‹
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java#% #(0
+%8com.mongodb.MongoClient"com.mongodb.MongoClient≤
+Ø
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java#! #(5
+%9"=com.mongodb.MongoClient#<init>(Lcom/mongodb/MongoClientURI;)V*
+
+%8com.mongodb.MongoClient*#
+!
+uricom.mongodb.MongoClientURI*
+12*õ
+14°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (!‹
+Ÿ
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java ("
+userNamejava.lang.String"__id*
+AtillaBosma⁄
+◊
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java ( 
+passwordjava.lang.String"__id*
+	Welkom123Ÿ
+÷
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (
+databasejava.lang.String"__id*
+
+cluster0˝
+˙
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (
+%0java.lang.String"__concat*
+mongodb+srv://*
+
+userNamejava.lang.StringÍ
+Á
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (%
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+:É
+Ä
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (0
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+passwordjava.lang.String†
+ù
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (l
+%3java.lang.String"__concat*
+
+%2java.lang.String*;9
+7@cluster0-z2xmc.azure.mongodb.net/test?retryWrites=trueÂ‚
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java () 
+%4com.mongodb.MongoClientURI"com.mongodb.MongoClientURI£
+†
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (m
+%5"6com.mongodb.MongoClientURI#<init>(Ljava/lang/String;)V*"
+ 
+%4com.mongodb.MongoClientURI*
+
+%3java.lang.StringÙ
+Ò
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (n!
+uricom.mongodb.MongoClientURI"__id*"
+ 
+%4com.mongodb.MongoClientURIÜÉ
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.javaT (j
+%6$Array" java.lang.String#toCharArray()[C*
+
+passwordjava.lang.String2toCharArray()Æ
+´
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java (k!
+%7com.mongodb.MongoCredential"qcom.mongodb.MongoCredential#createCredential(Ljava/lang/String;Ljava/lang/String;[C)Lcom/mongodb/MongoCredential;*"
+com.mongodb.MongoCredential*
+
+userNamejava.lang.String*
+
+databasejava.lang.String*
+
+%6$Array*
+13*Ú
+5°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) -(#„
+‡
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) -(#
+docorg.bson.Document"__id*
+
+%17org.bson.Document›⁄
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java. .(
+%18void"Acom.mongodb.client.MongoCollection#insertOne(Ljava/lang/Object;)V*)
+'
+c"com.mongodb.client.MongoCollection*
+
+docorg.bson.Document2insertOne(Ljava/lang/Object;)*
+1*∂
+6°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java- -(áÑ
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) -("
+%17org.bson.Document"Qorg.bson.Document#append(Ljava/lang/String;Ljava/lang/Object;)Lorg/bson/Document;*
+
+%16org.bson.Document*
+
+asHtml*
+
+htmljava.lang.Boolean2,append(Ljava/lang/String;Ljava/lang/Object;)*
+5*≥
+7°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java, ,(ÑÅ
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) ,( 
+%16org.bson.Document"Qorg.bson.Document#append(Ljava/lang/String;Ljava/lang/Object;)Lorg/bson/Document;*
+
+%15org.bson.Document*
+text*
+
+textjava.lang.String2,append(Ljava/lang/String;Ljava/lang/Object;)*
+6*π
+8°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java+ +(äá
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) +(&
+%15org.bson.Document"Qorg.bson.Document#append(Ljava/lang/String;Ljava/lang/Object;)Lorg/bson/Document;*
+
+%14org.bson.Document*	
+subject*
+
+subjectjava.lang.String2,append(Ljava/lang/String;Ljava/lang/Object;)*
+7*≥
+9°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java* *(ÑÅ
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) *( 
+%14org.bson.Document"Qorg.bson.Document#append(Ljava/lang/String;Ljava/lang/Object;)Lorg/bson/Document;*
+
+%12org.bson.Document*
+from*
+
+fromjava.lang.String2,append(Ljava/lang/String;Ljava/lang/Object;)*
+8*∫
+10°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java' '(;É
+Ä
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java' '(;'
+c"com.mongodb.client.MongoCollection"__id*+
+)
+%11"com.mongodb.client.MongoCollection‘—
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) )(
+%12org.bson.Document"org.bson.Document≠
+™
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java) )(*
+%13"?org.bson.Document#<init>(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%12org.bson.Document*
+to*
+
+tojava.lang.String*
+9*∆
+11°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java% %(:Ä
+˝
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java% %(:&
+db com.mongodb.client.MongoDatabase"__id*)
+'
+%10 com.mongodb.client.MongoDatabaseíè
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java'! '(:)
+%11"com.mongodb.client.MongoCollection"fcom.mongodb.client.MongoDatabase#getCollection(Ljava/lang/String;)Lcom/mongodb/client/MongoCollection;*(
+&
+db com.mongodb.client.MongoDatabase*	
+email2!getCollection(Ljava/lang/String;)*
+10*¿
+12°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java# #(5ˆ
+Û
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java# #(5&
+mongoClientcom.mongodb.MongoClient"__id*
+
+%8com.mongodb.MongoClientñì
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java% %(9'
+%10 com.mongodb.client.MongoDatabase"Ycom.mongodb.MongoClient#getDatabase(Ljava/lang/String;)Lcom/mongodb/client/MongoDatabase;*(
+&
+mongoClientcom.mongodb.MongoClient*
+
+databasejava.lang.String2getDatabase(Ljava/lang/String;)*
+11*÷
+1°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java5	 5("¨
+°
+ñC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\MongoSaver.java5 5(
+"":
+tojava.lang.String:
+fromjava.lang.String:
+subjectjava.lang.String:
+textjava.lang.String:
+htmljava.lang.BooleanB*"(
+&nl.hu.sie.bep.friendspammer.MongoSaver

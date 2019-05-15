@@ -1,0 +1,216 @@
+
+knl.hu.sie.bep.friendspammer.EmailSender#sendEmail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java ("14*‹
+13¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java!% !(,Ì
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java! !($%
+%8javax.mail.internet.MimeMessage"javax.mail.internet.MimeMessage∑
+¥
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java! !(-
+%9"=javax.mail.internet.MimeMessage#<init>(Ljavax/mail/Session;)V*'
+%
+%8javax.mail.internet.MimeMessage*
+
+sessionjavax.mail.Session*
+12* 
+14¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (%⁄◊
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (#
+%0java.util.Properties"java.util.PropertiesÏ
+È
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (%
+%1"java.util.Properties#<init>()V*
+
+%0java.util.PropertiesÎ
+Ë
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (&
+propsjava.util.Properties"__id*
+
+%0java.util.PropertiesàÖ
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (1
+%2java.lang.Object"Pjava.util.Properties#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;*
+
+propsjava.util.Properties*
+mail.smtp.host*
+smtp.mailtrap.io2)put(Ljava/lang/Object;Ljava/lang/Object;)¸˘
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (%
+%3java.lang.Object"Pjava.util.Properties#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;*
+
+propsjava.util.Properties*
+mail.smtp.port*
+25252)put(Ljava/lang/Object;Ljava/lang/Object;)¸˘
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (%
+%4java.lang.Object"Pjava.util.Properties#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;*
+
+propsjava.util.Properties*
+mail.smtp.auth*
+true2)put(Ljava/lang/Object;Ljava/lang/Object;)‡
+›
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (+
+usernamejava.lang.String"__id*
+4f9c719a29a510‡
+›
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (+
+passwordjava.lang.String"__id*
+38e954709fce75ÑÅ
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java
+ ("/
+%5)nl.hu.sie.bep.friendspammer.EmailSender$1")nl.hu.sie.bep.friendspammer.EmailSender$1Ö
+Ç
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (
+%6""javax.mail.Authenticator#<init>()V*1
+/
+%5)nl.hu.sie.bep.friendspammer.EmailSender$1î
+ë
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (
+%7javax.mail.Session"djavax.mail.Session#getInstance(Ljava/util/Properties;Ljavax/mail/Authenticator;)Ljavax/mail/Session;*"
+javax.mail.Session*
+
+propsjava.util.Properties*1
+/
+%5)nl.hu.sie.bep.friendspammer.EmailSender$1È
+Ê
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java (	
+sessionjavax.mail.Session"__id*
+
+%7javax.mail.Session*
+13*°
+3¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java. .(Ò
+Ó
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java. .(O
+%20boolean"énl.hu.sie.bep.friendspammer.MongoSaver#saveEmail(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Z**"(
+&nl.hu.sie.bep.friendspammer.MongoSaver*
+
+tojava.lang.String*
+spammer@spamer.com*
+
+subjectjava.lang.String*!
+
+messageBodyjava.lang.String*
+""*
+0*“
+4¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java, ,(¢
+ü
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java, ,(
+%19void"0javax.mail.Transport#send(Ljavax/mail/Message;)V*"
+javax.mail.Transport*
+
+messagejavax.mail.Message*
+3*Ù
+5¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java* *(ƒ¡
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java* *( 
+%18void",javax.mail.Part#setText(Ljava/lang/String;)V*
+
+messagejavax.mail.Message*!
+
+messageBodyjava.lang.String2setText(Ljava/lang/String;)*
+4*º
+6¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java( ((åâ
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java( ((@
+%17void"Ajavax.mail.Part#setContent(Ljava/lang/Object;Ljava/lang/String;)V*
+
+messagejavax.mail.Message*!
+
+messageBodyjava.lang.String*
+text/html; charset=utf-820setContent(Ljava/lang/Object;Ljava/lang/String;)*
+4*¸
+8¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java% %(
+…∆
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java% %(
+%16void"2javax.mail.Message#setSubject(Ljava/lang/String;)V*
+
+messagejavax.mail.Message*
+
+subjectjava.lang.String2setSubject(Ljava/lang/String;)*
+5
+6*Ê
+9¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java# $(∂≥
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java# $(
+%15void"Zjavax.mail.Message#setRecipients(Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)V*
+
+messagejavax.mail.Message*)
+'
+%13 javax.mail.Message$RecipientType*
+
+%14$Array2FsetRecipients(Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)*
+8*Ú
+10¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java# #(
+ﬂ
+‹
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java# #(1'
+%13 javax.mail.Message$RecipientType"__id*
+""ﬂ
+‹
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java$ $(
+%14$Array"cjavax.mail.internet.InternetAddress#parse(Ljava/lang/String;)[Ljavax/mail/internet/InternetAddress;*'"%
+#javax.mail.internet.InternetAddress*
+
+tojava.lang.String*
+9*¬
+0 "∫
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java3 3(
+implicit return*à
+11¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java" "(>÷”
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java" "(>
+%12void"1javax.mail.Message#setFrom(Ljavax/mail/Address;)V*
+
+messagejavax.mail.Message*,
+*
+%10#javax.mail.internet.InternetAddress2setFrom(Ljavax/mail/Address;)*
+10*ﬁ
+12¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java! !(.ˆ
+Û
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java! !(.
+messagejavax.mail.Message"__id*'
+%
+%8javax.mail.internet.MimeMessage˘ˆ
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java" "(&*
+%10#javax.mail.internet.InternetAddress"#javax.mail.internet.InternetAddress∑
+¥
+¢
+óC:\Users\User\Desktop\School\Back End Programming\Opdrachten\Friendspammer Opdracht 4\Helper\src\main\java\nl\hu\sie\bep\friendspammer\EmailSender.java" "(=
+%11"?javax.mail.internet.InternetAddress#<init>(Ljava/lang/String;)V*,
+*
+%10#javax.mail.internet.InternetAddress*
+spammer@spammer.com*
+11:
+subjectjava.lang.String:
+tojava.lang.String:
+messageBodyjava.lang.String:
+""B+")
+'nl.hu.sie.bep.friendspammer.EmailSender

@@ -1,0 +1,7 @@
+organization=abosma-github
+projectKey=nl.hu.bep.friendspammermaven:friendspammer-helper
+serverUrl=https://sonarcloud.io
+serverVersion=7.8.0.24676
+dashboardUrl=https://sonarcloud.io/dashboard?id=nl.hu.bep.friendspammermaven%3Afriendspammer-helper
+ceTaskId=AWqWX_gJvoFfNZkNex-H
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWqWX_gJvoFfNZkNex-H

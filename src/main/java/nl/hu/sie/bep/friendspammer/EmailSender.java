@@ -15,9 +15,13 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class EmailSender {
 
-	static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
+	private static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
+
+	private static Dotenv dotenv = Dotenv.load();
 
 	private EmailSender()
 	{
@@ -31,8 +35,8 @@ public class EmailSender {
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
 
-		final String username = "4f9c719a29a510";
-		final String password = "38e954709fce75";
+		final String username = dotenv.get("EMAIL_USERNAME");
+		final String password = dotenv.get("EMAIL_PASSWORD");
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
@@ -69,9 +73,9 @@ public class EmailSender {
 		props.put("mail.smtp.host", "smtp.mailtrap.io");
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
-		
-		final String username = "4f9c719a29a510";
-		final String password = "38e954709fce75";
+
+		final String username = dotenv.get("EMAIL_USERNAME");
+		final String password = dotenv.get("EMAIL_PASSWORD");
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
